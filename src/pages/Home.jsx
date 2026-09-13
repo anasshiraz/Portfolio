@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import {
   ArrowUpRightIcon,
+  DownloadIcon,
   GithubIcon,
   LinkedinIcon,
   TechnologyIcon,
@@ -57,6 +58,14 @@ function Home() {
             >
               View My Projects <ArrowUpRightIcon className="h-4 w-4" />
             </Link>
+
+            <a
+              href="/Anas_Shiraz_CV.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-md border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:border-neutral-900 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-100 dark:hover:border-neutral-100 dark:hover:bg-neutral-900"
+            >
+              <DownloadIcon className="h-4 w-4" /> Download CV
+            </a>
 
             <Link
               to="/contact"
