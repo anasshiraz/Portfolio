@@ -2,6 +2,43 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+.logo-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.logo-glow::before {
+  position: absolute;
+  inset: 25% -8%;
+  z-index: -1;
+  border-radius: 9999px;
+  background: rgb(59 130 246 / 0.24);
+  box-shadow: 0 0 16px 5px rgb(59 130 246 / 0.2);
+  content: "";
+  filter: blur(8px);
+}
+
+.preview-image {
+  filter: blur(4px);
+  transition:
+    filter 500ms ease,
+    transform 500ms ease;
+}
+
+@media (hover: hover) {
+  .preview-image:hover {
+    filter: blur(0);
+  }
+}
+
+.preview-image:active {
+  filter: blur(0);
+}
+
+.preview-image-revealed {
+  filter: blur(0);
+}
+
 .skeleton-shimmer {
   background: linear-gradient(
     90deg,

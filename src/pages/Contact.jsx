@@ -57,12 +57,12 @@ const handleSubmit = (e) => {
         </p>
 
         <h1 className="mt-3 text-4xl font-bold tracking-tight text-neutral-900 md:text-6xl dark:text-neutral-100">
-          Let's work together.
+          Let's build something great.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600 dark:text-neutral-300">
-          Have a project in mind, an opportunity to discuss, or just want to
-          connect? Feel free to reach out.
+          Have an idea, a project, or an opportunity in mind? I'd love to hear
+          about it. Send me a message and let's start a conversation.
         </p>
       </section>
 
@@ -72,7 +72,7 @@ const handleSubmit = (e) => {
         {/* Contact Information */}
         <div className="animate-slide-left animation-delay-100">
           <h2 className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
-            Get in touch
+            Say hello
           </h2>
 
           <div className="mt-8 space-y-4">
@@ -90,7 +90,7 @@ const handleSubmit = (e) => {
 
             <div className="border-t border-neutral-200 pt-6 dark:border-neutral-800">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-blue-500">
-                Find me online
+                Elsewhere on the web
               </p>
 
               <div className="mt-4 flex flex-wrap gap-3">
@@ -154,7 +154,7 @@ const handleSubmit = (e) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="example123@gmail.com"
+              placeholder="you@example.com"
               className="mt-2 w-full border-b border-neutral-300 bg-transparent py-3 text-neutral-900 outline-none transition focus:border-neutral-900 dark:border-neutral-700 dark:text-neutral-100 dark:focus:border-neutral-100"
             />
           </div>
@@ -174,7 +174,7 @@ const handleSubmit = (e) => {
               value={formData.message}
               onChange={handleChange}
               rows="5"
-              placeholder="Tell me what's on your mind..."
+              placeholder="Tell me a little about your project..."
               className="mt-2 w-full resize-none border-b border-neutral-300 bg-transparent py-3 text-neutral-900 outline-none transition focus:border-neutral-900 dark:border-neutral-700 dark:text-neutral-100 dark:focus:border-neutral-100"
             />
           </div>

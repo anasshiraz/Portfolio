@@ -22,11 +22,13 @@ function Navbar({ isDark, onToggleTheme }) {
           onClick={() => setIsOpen(false)}
           className="flex shrink-0 items-center rounded-xl px-2 py-1 transition hover:bg-neutral-100 dark:hover:bg-neutral-900"
         >
-          <img
-            src={logo}
-            alt="Anas Shiraz Logo"
-            className="h-9 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-10"
-          />
+          <span className="logo-glow inline-flex">
+            <img
+              src={logo}
+              alt="Anas Shiraz Logo"
+              className="relative z-0 h-9 w-auto object-contain transition duration-300 hover:scale-105 sm:h-10"
+            />
+          </span>
         </NavLink>
 
         {/* Desktop Navigation */}

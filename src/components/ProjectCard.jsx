@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { ArrowUpRightIcon, GithubIcon } from "./Icons";
 
 function ProjectCard({ project, animationDelay = 0 }) {
+  const [isPreviewRevealed, setIsPreviewRevealed] = useState(false);
+
   return (
     <article
       className="group animate-fade-up flex flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-neutral-400 hover:shadow-xl hover:shadow-neutral-200/50 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-600 dark:hover:shadow-black/20"
@@ -11,7 +14,10 @@ function ProjectCard({ project, animationDelay = 0 }) {
       <img
         src={project.image}
         alt={`${project.title} screenshot`}
-        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
+        onTouchStart={() => setIsPreviewRevealed(true)}
+        className={`preview-image h-56 w-full object-cover group-hover:scale-105 ${
+          isPreviewRevealed ? "preview-image-revealed" : ""
+        }`}
       />
 
       <div className="p-6">

@@ -8,11 +8,13 @@ function Footer() {
         
         {/* Copyright */}
         <div className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="Anas Shiraz Logo"
-            className="h-8 w-auto object-contain opacity-80"
-          />
+          <span className="logo-glow inline-flex">
+            <img
+              src={logo}
+              alt="Anas Shiraz Logo"
+              className="relative z-0 h-8 w-auto object-contain opacity-80"
+            />
+          </span>
           <p>
             © {new Date().getFullYear()} Anas Shiraz. All rights reserved.
           </p>
