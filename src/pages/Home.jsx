@@ -8,7 +8,12 @@ import {
 } from "../components/Icons";
 
 function Home() {
-  const technologies = ["React", "JavaScript", "Tailwind CSS", "Python"];
+  const technologies = [
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+  ];
 
   return (
     <main className="overflow-hidden">
@@ -17,18 +22,18 @@ function Home() {
         <div className="pointer-events-none absolute -left-40 top-16 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl dark:bg-blue-500/10" />
 
         <div className="relative animate-slide-left">
-          {/* Availability Badge */}
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 dark:border-emerald-900/60 dark:bg-emerald-950/40">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_0_4px_rgba(16,185,129,0.12)]"></span>
+          {/* Current Role Badge */}
+          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 dark:border-blue-900/60 dark:bg-blue-950/40">
+            <span className="h-2 w-2 rounded-full bg-blue-500" />
 
             <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
-              Open to opportunities
+              Software Developer Intern @ GrowSharks
             </p>
           </div>
 
           {/* Introduction */}
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-blue-500">
-            Anas Shiraz / Frontend Developer
+            Anas Shiraz / Software Developer Intern
           </p>
 
           {/* Name */}
@@ -39,15 +44,16 @@ function Home() {
 
           {/* Role */}
           <h2 className="mt-5 text-xl font-medium text-neutral-600 md:text-2xl dark:text-neutral-300">
-            Hi, I'm Anas Shiraz — Frontend Developer
+            Hi, I'm Anas Shiraz — Software Developer Intern
           </h2>
 
           {/* Description */}
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 dark:text-neutral-300 md:text-lg">
-            I'm a BCA student and Frontend Developer focused on building modern,
-            responsive, and user-friendly web applications with React. I'm
-            currently expanding my skills into backend development with Python
-            and FastAPI as I work toward becoming a Full Stack Developer.
+            I'm a BCA Hons student and Software Developer Intern at GrowSharks,
+            currently gaining hands-on experience building web applications for
+            real-world clients with React and Next.js. Alongside my frontend
+            work, I'm expanding my backend skills with Python, FastAPI, and
+            PostgreSQL.
           </p>
 
           {/* Buttons */}
@@ -64,7 +70,8 @@ function Home() {
               download
               className="inline-flex items-center gap-2 rounded-md border border-neutral-300 px-6 py-3 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:border-neutral-900 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-100 dark:hover:border-neutral-100 dark:hover:bg-neutral-900"
             >
-              <DownloadIcon className="h-4 w-4" /> Download CV
+              <DownloadIcon className="h-4 w-4" />
+              Download CV
             </a>
 
             <Link
@@ -83,7 +90,8 @@ function Home() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-600 transition hover:border-neutral-400 hover:text-neutral-900 dark:border-neutral-800 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:text-neutral-100"
             >
-              <GithubIcon className="h-4 w-4" /> GitHub
+              <GithubIcon className="h-4 w-4" />
+              GitHub
             </a>
 
             <a
@@ -92,14 +100,15 @@ function Home() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-600 transition hover:border-neutral-400 hover:text-neutral-900 dark:border-neutral-800 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:text-neutral-100"
             >
-              <LinkedinIcon className="h-4 w-4" /> LinkedIn
+              <LinkedinIcon className="h-4 w-4" />
+              LinkedIn
             </a>
           </div>
 
-          {/* Tech Stack */}
+          {/* Main Tech Stack */}
           <div className="mt-14 border-t border-neutral-200 pt-7 dark:border-neutral-800">
             <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
-              Currently working with
+              Core technologies
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
@@ -116,6 +125,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Developer Card */}
         <div className="relative mx-auto w-full max-w-md animate-scale-in animation-delay-200 lg:ml-auto">
           <div className="absolute -inset-4 rounded-4xl bg-linear-to-br from-blue-500/20 via-transparent to-violet-500/20 blur-2xl" />
 
@@ -144,43 +154,56 @@ function Home() {
 
               <p className="pl-5 text-neutral-500">
                 role:{" "}
-                <span className="text-emerald-500">"Frontend Developer"</span>,
+                <span className="text-emerald-500">
+                  "Software Developer Intern"
+                </span>
+                ,
               </p>
 
               <p className="pl-5 text-neutral-500">
                 stack:{" "}
-                <span className="text-emerald-500">"React + Tailwind"</span>,
+                <span className="text-emerald-500">
+                  "React + Next.js"
+                </span>
+                ,
               </p>
 
               <p className="pl-5 text-neutral-500">
                 learning:{" "}
-                <span className="text-emerald-500">"Python + FastAPI"</span>,
+                <span className="text-emerald-500">
+                  "FastAPI + PostgreSQL"
+                </span>
+                ,
               </p>
 
               <p className="pl-5 text-neutral-500">
                 goal:{" "}
-                <span className="text-emerald-500">"Full Stack Developer"</span>
+                <span className="text-emerald-500">
+                  "Full Stack Developer"
+                </span>
               </p>
 
               <p className="text-blue-500">{"};"}</p>
             </div>
 
             <div className="flex items-center justify-between rounded-xl bg-white px-4 py-3 text-xs text-neutral-500 dark:bg-neutral-950 dark:text-neutral-400">
-              <span>Currently building</span>
+              <span>Currently working on</span>
+
               <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                Real-world projects ✦
+                Client-based projects ✦
               </span>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Stats Section */}
       <section className="mx-auto grid max-w-6xl animate-fade-up animation-delay-300 grid-cols-2 border-y border-neutral-200 px-6 py-8 dark:border-neutral-800 sm:grid-cols-4">
         {[
-          ["02+", "Projects shipped"],
-          ["04", "Core technologies"],
           ["React", "Primary stack"],
-          ["FastAPI", "Currently learning"],
+          ["Next.js", "Current focus"],
+          ["FastAPI", "Backend learning"],
+          ["Git & GitHub", "Version control"],
         ].map(([value, label]) => (
           <div
             key={label}

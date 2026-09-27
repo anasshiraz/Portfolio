@@ -1,10 +1,11 @@
 const skills = [
-  "HTML5",
-  "CSS3",
   "JavaScript",
   "React",
+  "Next.js",
   "Tailwind CSS",
   "Python",
+  "FastAPI",
+  "PostgreSQL",
   "Git & GitHub",
 ];
 
