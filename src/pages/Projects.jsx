@@ -15,12 +15,15 @@ function Projects() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-600 dark:text-neutral-300">
-          A collection of projects that reflect how I think, build, and solve
-          problems across frontend and full-stack development.
+          A collection of projects I've built while learning, experimenting,
+          and developing my skills across modern web development. Each project
+          represents a step in my journey from learning the fundamentals to
+          building practical applications.
         </p>
+
         <div className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-100 px-3 py-1.5 text-xs text-neutral-500 dark:bg-neutral-900 dark:text-neutral-400">
-          <span className="h-1.5 w-1.5 rounded-full bg-blue-500" /> Selected
-          work · 2024—2026
+          <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
+          Selected work · Personal Projects
         </div>
       </section>
 

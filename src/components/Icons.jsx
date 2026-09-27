@@ -27,10 +27,24 @@ const TECHNOLOGY_STYLES = {
   CSS3: { label: "3", className: "bg-blue-500 text-white" },
   JavaScript: { label: "JS", className: "bg-yellow-300 text-neutral-950" },
   React: { label: "⚛", className: "bg-cyan-500 text-white" },
+  "Next.js": { label: "N", className: "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900" },
   "Tailwind CSS": { label: "≋", className: "bg-sky-500 text-white" },
   Python: { label: "Py", className: "bg-blue-600 text-yellow-300" },
-  "Git & GitHub": { label: "◆", className: "bg-neutral-900 text-white dark:bg-neutral-700" },
-}
+  FastAPI: { label: "FA", className: "bg-emerald-500 text-white" },
+  PostgreSQL: { label: "PG", className: "bg-blue-600 text-white" },
+  "Git & GitHub": {
+    label: "◆",
+    className: "bg-neutral-900 text-white dark:bg-neutral-700",
+  },
+  Git: {
+    label: "Git",
+    className: "bg-orange-600 text-white",
+  },
+  GitHub: {
+    label: "GH",
+    className: "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900",
+  },
+};
 
 export function TechnologyIcon({ technology }) {
   const style = TECHNOLOGY_STYLES[technology] ?? {
